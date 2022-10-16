@@ -1,6 +1,6 @@
 # PROGRAM PENGGUNAAN FUNGSI
 Dalam bahasa pemrograman C terdapat yang namanya fungsi dan prosedur.
-Kali ini, saya, I Kadek Indra Agusta Pratama, membuat contoh program penggunaan fungsi dalam bahasa pemrograma C.
+Kali ini, saya, I Kadek Indra Agusta Pratama, NIM:2205551056, membuat contoh program penggunaan fungsi dalam bahasa pemrograma C.
 Fungsi pada umumnya diletakan di luar program utama dengan catatan bahwa fungsi tersebut harus berisi pengembalian nilai atau *return*.
 Dalam pemrograman bahasa C, fungsi memiliki kegunaan untuk membuat sebuah program terlihat rapi dan struktural, serta agar tidak berantakan dan mengacaukan *output* program. <Br>
 ## Flowchart Program
