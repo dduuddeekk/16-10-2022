@@ -40,4 +40,13 @@ Ketika kita memilih angka 9 ....<Br>
 Maka program akan kembali ke menu awal.
 Dan jika kita memilih angka 0 maka program akan berhenti atau selesai.<Br>
 <Br>
+## Saran
+Akan ada baiknya untuk tidak menggunakan *compiler* *online* pada program yang telah saya buat karena di beberapa *compiler* *online* akan terjadi sebuah *bug* seperti .... <Br>
+<Br>
+![image](https://user-images.githubusercontent.com/112996147/196022916-97383ed6-28e4-42d3-b948-1c46ccbc25fe.png)<Br>
+<Br>
+Dan ....<Br>
+<Br>
+![image](https://user-images.githubusercontent.com/112996147/196022973-f1b80be6-cfed-4bc2-a4c9-f1e24cc93ce7.png) <Br>
+<Br>
 **Terima Kasih**
