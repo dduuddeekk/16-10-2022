@@ -232,36 +232,39 @@ void rta1450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*1780;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*2060;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*5080;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -325,36 +328,39 @@ void rta1900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*2060;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*2340;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*5940;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -418,36 +424,39 @@ void rta2450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*2340;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*2620;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*6000;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -511,36 +520,39 @@ void rta2900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*2620;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*2900;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*6060;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -604,36 +616,39 @@ void rta3450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*2900;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*3180;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*6120;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -697,36 +712,39 @@ void rta3900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*3180;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*3460;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*6180;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -790,36 +808,39 @@ void rta4450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*3460;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*3740;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*6240;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -883,36 +904,39 @@ void rta4900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*3740;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*4020;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*6300;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -976,36 +1000,39 @@ void rta11300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6340;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9200;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*9600;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1069,36 +1096,39 @@ void rta11301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6420;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9350;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*9650;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D1-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1162,36 +1192,39 @@ void rta21300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6490;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9500;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*9800;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1255,36 +1288,39 @@ void rta21301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6570;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9650;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*9950;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D2-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1348,36 +1384,39 @@ void rta31300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6640;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9800;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10100;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1441,36 +1480,39 @@ void rta31301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6720;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9950;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10250;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D3-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1534,36 +1576,39 @@ void rta41300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6790;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10100;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10400;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1627,36 +1672,39 @@ void rta41301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6870;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10250;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10550;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D4-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1720,36 +1768,39 @@ void rtb450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*6940;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10400;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10700;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-1\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1813,36 +1864,39 @@ void rtb900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*7020;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10550;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10850;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-2\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1906,36 +1960,39 @@ void rtb1300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*7090;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10700;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*11000;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-3\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -1999,36 +2056,39 @@ void rtb1301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*7170;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10850;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*11150;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_RT + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
 			printf("\t\t\t\t Alamat               : %s\n",alamat);
 			printf("\t\t\t\t Golongan Anda        : D5-4\n");
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
 			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2047,7 +2107,7 @@ void niaga_kecil_450(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*9200;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2056,14 +2116,14 @@ void niaga_kecil_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*9850;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2072,14 +2132,14 @@ void niaga_kecil_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*10950;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2088,7 +2148,7 @@ void niaga_kecil_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2098,7 +2158,7 @@ void niaga_kecil_450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*9200;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2106,13 +2166,14 @@ void niaga_kecil_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*9850;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2120,13 +2181,14 @@ void niaga_kecil_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*10950;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2134,7 +2196,8 @@ void niaga_kecil_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2152,7 +2215,7 @@ void niaga_kecil_900(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*9500;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2161,14 +2224,14 @@ void niaga_kecil_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*10150;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2177,14 +2240,14 @@ void niaga_kecil_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*11250;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2193,7 +2256,7 @@ void niaga_kecil_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2203,7 +2266,7 @@ void niaga_kecil_900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*9500;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2211,13 +2274,14 @@ void niaga_kecil_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10150;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2225,13 +2289,14 @@ void niaga_kecil_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*11250;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2239,7 +2304,8 @@ void niaga_kecil_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2257,7 +2323,7 @@ void niaga_kecil_1300(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*9800;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2266,14 +2332,14 @@ void niaga_kecil_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*10450;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2282,14 +2348,14 @@ void niaga_kecil_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*11550;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2298,7 +2364,7 @@ void niaga_kecil_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2308,7 +2374,7 @@ void niaga_kecil_1300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*9800;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2316,13 +2382,14 @@ void niaga_kecil_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10450;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2330,13 +2397,14 @@ void niaga_kecil_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*11550;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2344,7 +2412,8 @@ void niaga_kecil_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2362,7 +2431,7 @@ void niaga_kecil_1301(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*10100;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2371,14 +2440,14 @@ void niaga_kecil_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*10750;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2387,14 +2456,14 @@ void niaga_kecil_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*11850;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2403,7 +2472,7 @@ void niaga_kecil_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2413,7 +2482,7 @@ void niaga_kecil_1301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*10100;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2421,13 +2490,14 @@ void niaga_kecil_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*10750;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2435,13 +2505,14 @@ void niaga_kecil_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*11850;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2449,7 +2520,8 @@ void niaga_kecil_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E1-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2467,7 +2539,7 @@ void niaga_sedang_450(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*10400;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2476,14 +2548,14 @@ void niaga_sedang_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*11050;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2492,14 +2564,14 @@ void niaga_sedang_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*12150;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2508,7 +2580,7 @@ void niaga_sedang_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2518,7 +2590,7 @@ void niaga_sedang_450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*10400;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2526,13 +2598,14 @@ void niaga_sedang_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*11050;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2540,13 +2613,14 @@ void niaga_sedang_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*12150;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2554,7 +2628,8 @@ void niaga_sedang_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2572,7 +2647,7 @@ void niaga_sedang_900(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*10700;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2581,14 +2656,14 @@ void niaga_sedang_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*11350;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2597,14 +2672,14 @@ void niaga_sedang_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*12550;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2613,7 +2688,7 @@ void niaga_sedang_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2623,7 +2698,7 @@ void niaga_sedang_900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*10700;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2631,13 +2706,14 @@ void niaga_sedang_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*11350;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2645,13 +2721,14 @@ void niaga_sedang_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*12550;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2659,7 +2736,8 @@ void niaga_sedang_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2677,7 +2755,7 @@ void niaga_sedang_1300(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*11000;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2686,14 +2764,14 @@ void niaga_sedang_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*11650;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2702,14 +2780,14 @@ void niaga_sedang_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*13150;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2718,7 +2796,7 @@ void niaga_sedang_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2728,7 +2806,7 @@ void niaga_sedang_1300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*11000;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2736,13 +2814,14 @@ void niaga_sedang_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*11650;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2750,13 +2829,14 @@ void niaga_sedang_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*13150;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2764,7 +2844,8 @@ void niaga_sedang_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2782,7 +2863,7 @@ void niaga_sedang_1301(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*11300;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2791,14 +2872,14 @@ void niaga_sedang_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*11950;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2807,14 +2888,14 @@ void niaga_sedang_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*13950;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2823,7 +2904,7 @@ void niaga_sedang_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2833,7 +2914,7 @@ void niaga_sedang_1301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*11300;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2841,13 +2922,14 @@ void niaga_sedang_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*11950;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2855,13 +2937,14 @@ void niaga_sedang_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*13950;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2869,7 +2952,8 @@ void niaga_sedang_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E2-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2887,7 +2971,7 @@ void niaga_besar_450(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*11600;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2896,14 +2980,14 @@ void niaga_besar_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*12250;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2912,14 +2996,14 @@ void niaga_besar_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*14750;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2928,7 +3012,7 @@ void niaga_besar_450(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-1\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -2938,7 +3022,7 @@ void niaga_besar_450(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*11600;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2946,13 +3030,14 @@ void niaga_besar_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*12250;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2960,13 +3045,14 @@ void niaga_besar_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*14750;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -2974,7 +3060,8 @@ void niaga_besar_450(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-1\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -2992,7 +3079,7 @@ void niaga_besar_900(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*11900;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3001,14 +3088,14 @@ void niaga_besar_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*12550;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3017,14 +3104,14 @@ void niaga_besar_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*15050;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3033,7 +3120,7 @@ void niaga_besar_900(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-2\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -3043,7 +3130,7 @@ void niaga_besar_900(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*11900;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3051,13 +3138,14 @@ void niaga_besar_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*12550;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3065,13 +3153,14 @@ void niaga_besar_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*15050;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3079,7 +3168,8 @@ void niaga_besar_900(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-2\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -3097,7 +3187,7 @@ void niaga_besar_1300(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*12200;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3106,14 +3196,14 @@ void niaga_besar_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*12850;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3122,14 +3212,14 @@ void niaga_besar_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*15850;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3138,7 +3228,7 @@ void niaga_besar_1300(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-3\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -3148,7 +3238,7 @@ void niaga_besar_1300(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*12200;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3156,13 +3246,14 @@ void niaga_besar_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*12850;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3170,13 +3261,14 @@ void niaga_besar_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*15850;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3184,7 +3276,8 @@ void niaga_besar_1300(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-3\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
@@ -3202,7 +3295,7 @@ void niaga_besar_1301(){
 	}else if(bulan_sebelumnya == 0){
 		if (bulan_sekarang <= 10){
 			totalm = 10*12500;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3211,14 +3304,14 @@ void niaga_besar_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
 			totalm = bulan_sekarang*13150;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3227,14 +3320,14 @@ void niaga_besar_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan_sekarang*16650;
-			tagihan = BPM_RT + ADM + totalm + BIAYA_10;
+			tagihan = BPM_U + ADM + totalm + BIAYA_10;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3243,7 +3336,7 @@ void niaga_besar_1301(){
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-4\n");
 			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",(0+BIAYA_10));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
@@ -3253,7 +3346,7 @@ void niaga_besar_1301(){
 		bulan = bulan_sekarang - bulan_sebelumnya;
 		if (bulan <= 10){
 			totalm = 10*12500;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3261,13 +3354,14 @@ void niaga_besar_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else if(bulan >= 11 && bulan <= 20){
 			totalm = bulan*13150;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3275,13 +3369,14 @@ void niaga_besar_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
 		}else{
 			totalm = bulan*16650;
-			tagihan = BPM_RT + totalm;
+			tagihan = BPM_U + totalm + ADM;
 			printf("\t\t\t\t===============================================\n");
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t Nama Pemilik         : %s\n",name);
@@ -3289,7 +3384,8 @@ void niaga_besar_1301(){
 			printf("\t\t\t\t Nama Niaga           : %s\n",niaga);
 			printf("\t\t\t\t Alamat               : %s\n",alamat_niaga);
 			printf("\t\t\t\t Golongan Anda        : E3-4\n");
-			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_RT));
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",(0+ADM));
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",(0+BPM_U));
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
