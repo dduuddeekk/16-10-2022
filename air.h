@@ -3,6 +3,7 @@
 #include <math.h>
 #include <time.h>
 #include "validasi.h"
+#include "struk.h"
 #define BPM_RT 10 //Biaya Pemliharaan Meter Rumah Tangga
 #define BPM_U 20 //Biaya Pemeliharaan Meter Usaha
 #define ADM 50 //Biaya Administrasi
