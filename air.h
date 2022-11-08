@@ -65,6 +65,19 @@ void jalan_subsidi(){
     range_Validasi_Int(&jalan, 0, 4, "\t\t\t\t Masukkan pilihan lebar jalan: ");
     system("cls");
 }
+void jalan_niaga(){
+    printf("\t\t\t\t ====================================\n");
+    printf("\t\t\t\t |                                  |\n");
+    printf("\t\t\t\t |       Pilihan Lebar Jalan        |\n");
+    printf("\t\t\t\t |       1. 0 - 6,99 meter          |\n");
+    printf("\t\t\t\t |       2. 7 - 10 meter            |\n");
+    printf("\t\t\t\t |       3. > 10 meter              |\n");
+    printf("\t\t\t\t |       0. Keluar                  |\n");
+    printf("\t\t\t\t |                                  |\n");
+    printf("\t\t\t\t ====================================\n");
+    range_Validasi_Int(&jalan, 0, 3, "\t\t\t\t Masukkan pilihan lebar jalan: ");
+    system("cls");
+}
 void listrik_subsidi(){
     printf("\t\t\t\t ====================================\n");
     printf("\t\t\t\t |                                  |\n");
@@ -87,6 +100,20 @@ void listrik_nonsubsidi(){
     printf("\t\t\t\t |                                  |\n");
     printf("\t\t\t\t ====================================\n");
     range_Validasi_Int(&listrik, 0, 2, "\t\t\t\t Masukkan pilihan listrik: ");
+    system("cls");
+}
+void listrik_campur(){
+    printf("\t\t\t\t ====================================\n");
+    printf("\t\t\t\t |                                  |\n");
+    printf("\t\t\t\t |          Pilihan Listrik         |\n");
+    printf("\t\t\t\t |       1. 450 VA                  |\n");
+    printf("\t\t\t\t |       2. 900 VA                  |\n");
+    printf("\t\t\t\t |       3. 1300 VA                 |\n");
+    printf("\t\t\t\t |       4. > 1300 VA               |\n");
+    printf("\t\t\t\t |       0. Keluar                  |\n");
+    printf("\t\t\t\t |                                  |\n");
+    printf("\t\t\t\t ====================================\n");
+    range_Validasi_Int(&listrik, 0, 4, "\t\t\t\t Masukkan pilihan listrik: ");
     system("cls");
 }
 void jeroan(){
@@ -210,6 +237,23 @@ void jeroan(){
                 }
                 break;
             case 2:
+                listrik_campur();
+                switch(listrik){
+                    case 1:
+                        char golongan[4] = "D5-1";
+                        break;
+                    case 2:
+                        char golongan[4] = "D5-2";
+                        break;
+                    case 3:
+                        char golongan[4] = "D5-3";
+                        break;
+                    case 4:
+                        char golongan[4] = "D5-4";
+                        break;
+                    default:
+                        printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
+                }
                 break;
             case 3:
                 printf("\t\t\t\t Masukkan nama niaga Anda: ");
@@ -219,6 +263,66 @@ void jeroan(){
                 fflush(stdin);
                 fgets(alamat_niaga, sizeof(alamat_niaga), stdin);
                 system("cls");
+                jalan_niaga();
+                switch(jalan){
+                    case 1:
+                        listrik_campur();
+                        switch(listrik){
+                            case 1:
+                                char golongan[4] = "E1-1";
+                                break;
+                            case 2:
+                                char golongan[4] = "E1-2";
+                                break;
+                            case 3:
+                                char golongan[4] = "E1-3";
+                                break;
+                            case 4:
+                                char golongan[4] = "E1-4";
+                                break;
+                            default:
+                                printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
+                        }
+                        break;
+                    case 2:
+                        switch(listrik){
+                            case 1:
+                                char golongan[4] = "E2-1";
+                                break;
+                            case 2:
+                                char golongan[4] = "E2-2";
+                                break;
+                            case 3:
+                                char golongan[4] = "E2-3";
+                                break;
+                            case 4:
+                                char golongan[4] = "E2-4";
+                                break;
+                            default:
+                                printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
+                        }
+                        break;
+                    case 3:
+                        switch(listrik){
+                            case 1:
+                                char golongan[4] = "E3-1";
+                                break;
+                            case 2:
+                                char golongan[4] = "E3-2";
+                                break;
+                            case 3:
+                                char golongan[4] = "E3-3";
+                                break;
+                            case 4:
+                                char golongan[4] = "E3-4";
+                                break;
+                            default:
+                                printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
+                        }
+                        break;
+                    default:
+                        printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
+                }
                 break;
             default:
                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
