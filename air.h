@@ -11,7 +11,7 @@
 #define BIAYA_N 10 //Biaya 10+n meter kubik adalah Rp 10,- 
 #define DENDA_100 20 //Denda pemakaian lebih dari 100 meter kubik adalah 20,-
 #define DENDA_10_100 10 //Denda pemakaian lebih dari 10 meter kubik dan tidak lebih dari 100 meter kubik adalah Rp 10,-
-int kelompok, rt, jalan, listrik, baca;
+int kelompok, rt, jalan, listrik, harga1, harga2, harga3, baca;
 char nama[100], alamat[100], nama_niaga[100], alamat_niaga[100];
 void identity(){
     printf("\t\t\t\t ====================================\n");
@@ -139,9 +139,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D1-1";
+                                        harga1 = 1780;
+                                        harga2 = 2060;
+                                        harga3 = 5880;
                                         break;
                                     case 2:
                                         char golongan[4] = "D1-2";
+                                        harga1 = 2060;
+                                        harga2 = 2340;
+                                        harga3 = 5940;
                                         break;
                                 }
                                 break;
@@ -150,9 +156,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D2-1";
+                                        harga1 = 2340;
+                                        harga2 = 2620;
+                                        harga3 = 6000;
                                         break;
                                     case 2:
                                         char golongan[4] = "D2-2";
+                                        harga1 = 2620;
+                                        harga2 = 2900;
+                                        harga3 = 6060;
                                         break;
                                 }
                                 break;
@@ -161,9 +173,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D3-1";
+                                        harga1 = 2900;
+                                        harga2 = 3180;
+                                        harga3 = 6120;
                                         break;
                                     case 2:
                                         char golongan[4] = "D3-2";
+                                        harga1 = 3180;
+                                        harga2 = 3460;
+                                        harga3 = 6180;
                                         break;
                                 }
                                 break;
@@ -172,9 +190,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D4-1";
+                                        harga1 = 3460;
+                                        harga2 = 3740;
+                                        harga3 = 6240;
                                         break;
                                     case 2:
                                         char golongan[4] = "D4-2";
+                                        harga1 = 3740;
+                                        harga2 = 4020;
+                                        harga3 = 6240;
                                         break;
                                 }
                                 break;
