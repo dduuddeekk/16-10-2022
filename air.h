@@ -214,9 +214,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D1-3";
+                                        harga1 = 6340;
+                                        harga2 = 9200;
+                                        harga3 = 9600;
                                         break;
                                     case 2:
                                         char golongan[4] = "D1-4";
+                                        harga1 = 6420;
+                                        harga2 = 9350;
+                                        harga3 = 9650;
                                         break;
                                 }
                                 break;
@@ -225,9 +231,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D2-3";
+                                        harga1 = 6490;
+                                        harga2 = 9500;
+                                        harga3 = 9800;
                                         break;
                                     case 2:
                                         char golongan[4] = "D2-4";
+                                        harga1 = 6570;
+                                        harga2 = 9650;
+                                        harga3 = 9950;
                                         break;
                                 }
                                 break;
@@ -236,9 +248,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D3-3";
+                                        harga1 = 6640;
+                                        harga2 = 9800;
+                                        harga3 = 10100;
                                         break;
                                     case 2:
                                         char golongan[4] = "D3-4";
+                                        harga1 = 6720;
+                                        harga2 = 9950;
+                                        harga3 = 10250;
                                         break;
                                 }
                                 break;
@@ -247,9 +265,15 @@ void jeroan(){
                                 switch(listrik){
                                     case 1:
                                         char golongan[4] = "D4-3";
+                                        harga1 = 6790;
+                                        harga2 = 10100;
+                                        harga3 = 10400;
                                         break;
                                     case 2:
                                         char golongan[4] = "D4-4";
+                                        harga1 = 6870;
+                                        harga2 = 10250;
+                                        harga3 = 10550;
                                         break;
                                 }
                                 break;
@@ -266,15 +290,27 @@ void jeroan(){
                 switch(listrik){
                     case 1:
                         char golongan[4] = "D5-1";
+                        harga1 = 6940;
+                        harga2 = 10400;
+                        harga3 = 10700;
                         break;
                     case 2:
                         char golongan[4] = "D5-2";
+                        harga1 = 7020;
+                        harga2 = 10550;
+                        harga3 = 10850;
                         break;
                     case 3:
                         char golongan[4] = "D5-3";
+                        harga1 = 7090;
+                        harga2 = 10700;
+                        harga3 = 11000;
                         break;
                     case 4:
                         char golongan[4] = "D5-4";
+                        harga1 = 7170;
+                        harga2 = 10850;
+                        harga3 = 11150;
                         break;
                     default:
                         printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
@@ -295,15 +331,27 @@ void jeroan(){
                         switch(listrik){
                             case 1:
                                 char golongan[4] = "E1-1";
+                                harga1 = 9200;
+                                harga2 = 9850;
+                                harga3 = 10950;
                                 break;
                             case 2:
                                 char golongan[4] = "E1-2";
+                                harga1 = 9500;
+                                harga2 = 10150;
+                                harga3 = 11250;
                                 break;
                             case 3:
                                 char golongan[4] = "E1-3";
+                                harga1 = 9800;
+                                harga2 = 10450;
+                                harga3 = 11550;
                                 break;
                             case 4:
                                 char golongan[4] = "E1-4";
+                                harga1 = 10100;
+                                harga2 = 10750;
+                                harga3 = 11850;
                                 break;
                             default:
                                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
