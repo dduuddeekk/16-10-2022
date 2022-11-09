@@ -12,8 +12,7 @@
 #define DENDA_100 20 //Denda pemakaian lebih dari 100 meter kubik adalah 20,-
 #define DENDA_10_100 10 //Denda pemakaian lebih dari 10 meter kubik dan tidak lebih dari 100 meter kubik adalah Rp 10,-
 int kelompok, rt, jalan, listrik, harga1, harga2, harga3, baca, bulan_sekarang, bulan_sebelumnya, bulan, totalm, tagihan;
-char nama[100], alamat[100], nama_niaga[100], alamat_niaga[100];
-char golongan[] = "X0-0";
+char nama[100], alamat[100], nama_niaga[100], alamat_niaga[100], golongan[] = "X0-0";
 int validasi_Int(int *var){
     char buff[1024];
     char cek;
@@ -732,6 +731,15 @@ void listrik_campur(){
     range_Validasi_Int(&listrik, 0, 4, "\t\t\t\t Masukkan pilihan listrik: ");
     system("cls");
 }
+void usaha(){
+    printf("\t\t\t\t Masukkan nama niaga Anda: ");
+    fgets(nama_niaga, sizeof(nama_niaga), stdin);
+    fflush(stdin);
+    printf("\t\t\t\t Masukkan alamat niaga Anda: ");
+    fgets(alamat_niaga, sizeof(alamat_niaga), stdin);
+    fflush(stdin);
+    system("cls");
+}
 void terakhir(){
     printf("\t\t\t\t ====================================\n");
     printf("\t\t\t\t |                                  |\n");
@@ -1041,13 +1049,7 @@ void utama(){
                 }
                 break;
             case 3:
-                printf("\t\t\t\t Masukkan nama niaga Anda: ");
-                fflush(stdin);
-                fgets(nama_niaga, sizeof(nama_niaga), stdin);
-                printf("\t\t\t\t Masukkan alamat niaga Anda: ");
-                fflush(stdin);
-                fgets(alamat_niaga, sizeof(alamat_niaga), stdin);
-                system("cls");
+                usaha();
                 jalan_niaga();
                 switch(jalan){
                     case 1:
@@ -1102,6 +1104,7 @@ void utama(){
                         }
                         break;
                     case 2:
+                        listrik_campur();
                         switch(listrik){
                             case 1:
                                 //char golongan[4] = "E2-1";
@@ -1152,6 +1155,7 @@ void utama(){
                         }
                         break;
                     case 3:
+                        listrik_campur();
                         switch(listrik){
                             case 1:
                                 //char golongan[4] = "E3-1";
