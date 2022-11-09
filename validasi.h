@@ -30,3 +30,13 @@ void range_Validasi_Int(int *var, int range1, int range2, char *nama){
 		printf("\t\t\t\t Pilih nomor yang tersedia: \n");
     }
 }
+void range_Validasi_Baca(int *var, int range1, int range2, char *nama){
+    while(1){
+        reValidasi_Int(var, nama);
+        fflush(stdin);
+        if(*var == range1  ||*var == range2)
+            break;
+        printf("\n\t\t\t\t Maaf, Input yang Anda masukan salah.\n"); 
+		printf("\t\t\t\t Pilih nomor yang tersedia: \n");
+    }
+}

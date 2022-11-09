@@ -117,6 +117,17 @@ void listrik_campur(){
     range_Validasi_Int(&listrik, 0, 4, "\t\t\t\t Masukkan pilihan listrik: ");
     system("cls");
 }
+void read(){
+    printf("\t\t\t\t ====================================\n");
+    printf("\t\t\t\t |                                  |\n");
+    printf("\t\t\t\t |            Terima Kasih          |\n");
+    printf("\t\t\t\t |       9. Ke Menu Utama           |\n");
+    printf("\t\t\t\t |       0. Keluar                  |\n");
+    printf("\t\t\t\t |                                  |\n");
+    printf("\t\t\t\t ====================================\n");
+    range_Validasi_Baca(&baca, 0, 9, "\t\t\t\t\n\n Masukkan pilihan: ");
+    system("cls");
+}
 void jeroan(){
     do{
         printf("\t\t\t\t Masukkan nama Anda: ");
@@ -361,15 +372,27 @@ void jeroan(){
                         switch(listrik){
                             case 1:
                                 char golongan[4] = "E2-1";
+                                harga1 = 10400;
+                                harga2 = 11050;
+                                harga3 = 12150;
                                 break;
                             case 2:
                                 char golongan[4] = "E2-2";
+                                harga1 = 10700;
+                                harga2 = 11350;
+                                harga3 = 12550;
                                 break;
                             case 3:
                                 char golongan[4] = "E2-3";
+                                harga1 = 11000;
+                                harga2 = 11650;
+                                harga3 = 13150;
                                 break;
                             case 4:
                                 char golongan[4] = "E2-4";
+                                harga1 = 11300;
+                                harga2 = 11950;
+                                harga3 = 13950;
                                 break;
                             default:
                                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
@@ -379,15 +402,27 @@ void jeroan(){
                         switch(listrik){
                             case 1:
                                 char golongan[4] = "E3-1";
+                                harga1 = 11600;
+                                harga2 = 12250;
+                                harga3 = 14750;
                                 break;
                             case 2:
                                 char golongan[4] = "E3-2";
+                                harga1 = 11900;
+                                harga2 = 12550;
+                                harga3 = 15050;
                                 break;
                             case 3:
                                 char golongan[4] = "E3-3";
+                                harga1 = 12200;
+                                harga2 = 12850;
+                                harga3 = 15850;
                                 break;
                             case 4:
                                 char golongan[4] = "E3-4";
+                                harga1 = 12500;
+                                harga2 = 13150;
+                                harga3 = 16650;
                                 break;
                             default:
                                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
@@ -400,5 +435,8 @@ void jeroan(){
             default:
                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
         }
+        system("pause");
+        system("cls");
+        read();
     }while(baca == 9);
 }
