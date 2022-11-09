@@ -23,7 +23,7 @@ void struk_rumah_tangga(){
     if(bulan_sekarang < bulan_sebelumnya){
         printf("\t\t\t\t Input Salah!\n");
         printf("\t\t\t\t Masukkan kembali!\n");
-        return rumah_tangga();
+        return struk_rumah_tangga();
     }else if(bulan_sebelumnya == 0){
         if(bulan_sekarang <= 10){
             totalm = 10*harga1;
@@ -134,7 +134,7 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
                 printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
                 printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT);
-                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
@@ -186,6 +186,386 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
                 printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
                 printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }
+        }
+    }
+}
+void struk_rumah_niaga(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    int sisa = JATUH_TEMPO - tm.tm_mday;
+    range_Validasi_Bulan(&bulan_sekarang, 0, "\t\t\t\t Masukkan pemakaian bulan sekarang (M^3): ");
+    range_Validasi_Bulan(&bulan_sebelumnya, 0, "\t\t\t\t Masukkan pemakaian bulan sebelumnya (M^3): ");
+    if(bulan_sekarang < bulan_sebelumnya){
+        printf("\t\t\t\t Input Salah!\n");
+        printf("\t\t\t\t Masukkan kembali!\n");
+        return struk_rumah_niaga();
+    }else if(bulan_sebelumnya == 0){
+        if(bulan_sekarang <= 10){
+            totalm = 10*harga1;
+            tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
+            printf("\t\t\t\t===============================================\n");
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+			printf("\t\t\t\t Alamat               : %s\n",alamat);
+			printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+            printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t===============================================\n");
+        }else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
+            totalm = bulan_sekarang*harga2;
+            tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
+            printf("\t\t\t\t===============================================\n");
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+			printf("\t\t\t\t Alamat               : %s\n",alamat);
+			printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+            printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t===============================================\n");
+        }else{
+            totalm = bulan_sekarang*harga3;
+            tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
+            printf("\t\t\t\t===============================================\n");
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+			printf("\t\t\t\t Alamat               : %s\n",alamat);
+			printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+            printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t===============================================\n");
+        }
+    }else{
+        if(sisa < 0){
+            bulan = bulan_sekarang - bulan_sebelumnya;
+            if(bulan <= 10){
+                totalm = 10*harga1;
+                tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_10_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else if(bulan >= 11 && bulan <= 20){
+                totalm = bulan*harga2;
+                tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_10_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else if(bulan > 20 && bulan < 100){
+                totalm = bulan*harga3;
+                tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_10_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else{
+                totalm = bulan*harga3;
+                tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }
+        }else{
+            bulan = bulan_sekarang - bulan_sebelumnya;
+            if(bulan <= 10){
+                totalm = 10*harga1;
+                tagihan = BPM_RT + BPM_U + ADM + totalm;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else if(bulan >= 11 && bulan <= 20){
+                totalm = bulan*harga2;
+                tagihan = BPM_RT + BPM_U + ADM + totalm;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else{
+                totalm = bulan*harga3;
+                tagihan = BPM_RT + BPM_U + ADM + totalm;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }
+        }
+    }
+}
+void struk_niaga(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    int sisa = JATUH_TEMPO - tm.tm_mday;
+    range_Validasi_Bulan(&bulan_sekarang, 0, "\t\t\t\t Masukkan pemakaian bulan sekarang (M^3): ");
+    range_Validasi_Bulan(&bulan_sebelumnya, 0, "\t\t\t\t Masukkan pemakaian bulan sebelumnya (M^3): ");
+    if(bulan_sekarang < bulan_sebelumnya){
+        printf("\t\t\t\t Input Salah!\n");
+        printf("\t\t\t\t Masukkan kembali!\n");
+        return struk_niaga();
+    }else if(bulan_sebelumnya == 0){
+        if(bulan_sekarang <= 10){
+            totalm = 10*harga1;
+            tagihan = BPM_U + ADM + totalm + BIAYA_10;
+            printf("\t\t\t\t===============================================\n");
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+			printf("\t\t\t\t Alamat               : %s\n",alamat);
+            printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+			printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+            printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t===============================================\n");
+        }else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
+            totalm = bulan_sekarang*harga2;
+            tagihan = BPM_U + ADM + totalm + BIAYA_10;
+            printf("\t\t\t\t===============================================\n");
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+			printf("\t\t\t\t Alamat               : %s\n",alamat);
+            printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+			printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+            printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t===============================================\n");
+        }else{
+            totalm = bulan_sekarang*harga3;
+            tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
+            printf("\t\t\t\t===============================================\n");
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+			printf("\t\t\t\t Alamat               : %s\n",alamat);
+            printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+			printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+            printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+			printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+			printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+			printf("\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+			printf("\t\t\t\t                                               \n");
+			printf("\t\t\t\t===============================================\n");
+        }
+    }else{
+        if(sisa < 0){
+            bulan = bulan_sekarang - bulan_sebelumnya;
+            if(bulan <= 10){
+                totalm = 10*harga1;
+                tagihan = BPM_U + ADM + totalm + DENDA_10_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else if(bulan >= 11 && bulan <= 20){
+                totalm = bulan*harga2;
+                tagihan = BPM_U + ADM + totalm + DENDA_10_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else if(bulan > 20 && bulan < 100){
+                totalm = bulan*harga3;
+                tagihan = BPM_U + ADM + totalm + DENDA_10_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else{
+                totalm = bulan*harga3;
+                tagihan = BPM_U + ADM + totalm + DENDA_100;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+                printf("\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }
+        }else{
+            bulan = bulan_sekarang - bulan_sebelumnya;
+            if(bulan <= 10){
+                totalm = 10*harga1;
+                tagihan = BPM_U + ADM + totalm;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else if(bulan >= 11 && bulan <= 20){
+                totalm = bulan*harga2;
+                tagihan = BPM_U + ADM + totalm;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+                printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t===============================================\n");
+            }else{
+                totalm = bulan*harga3;
+                tagihan = BPM_U + ADM + totalm;
+                printf("\t\t\t\t===============================================\n");
+                printf("\t\t\t\t                                               \n");
+                printf("\t\t\t\t Nama Pemilik         : %s\n",nama);
+                printf("\t\t\t\t Alamat               : %s\n",alamat);
+                printf("\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+			    printf("\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+                printf("\t\t\t\t Golongan Anda        : %s\n",golongan);
+                printf("\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+                printf("\t\t\t\t Jatuh Tempo Dalam    : Rp %d hari\n",sisa);
+                printf("\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+                printf("\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");

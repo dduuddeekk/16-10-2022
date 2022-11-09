@@ -2,6 +2,6 @@
 #include "air.h"
 int main(){
     identity();
-    jeroan();
+    utama();
     return 0;
 }

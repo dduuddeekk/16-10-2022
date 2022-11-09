@@ -128,7 +128,7 @@ void read(){
     range_Validasi_Baca(&baca, 0, 9, "\t\t\t\t\n\n Masukkan pilihan: ");
     system("cls");
 }
-void jeroan(){
+void utama(){
     do{
         printf("\t\t\t\t Masukkan nama Anda: ");
         fflush(stdin);
@@ -320,24 +320,28 @@ void jeroan(){
                         harga1 = 6940;
                         harga2 = 10400;
                         harga3 = 10700;
+                        struk_rumah_niaga();
                         break;
                     case 2:
                         golongan[4] = "D5-2";
                         harga1 = 7020;
                         harga2 = 10550;
                         harga3 = 10850;
+                        struk_rumah_niaga();
                         break;
                     case 3:
                         golongan[4] = "D5-3";
                         harga1 = 7090;
                         harga2 = 10700;
                         harga3 = 11000;
+                        struk_rumah_niaga();
                         break;
                     case 4:
                         golongan[4] = "D5-4";
                         harga1 = 7170;
                         harga2 = 10850;
                         harga3 = 11150;
+                        struk_rumah_niaga();
                         break;
                     default:
                         printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
@@ -361,24 +365,28 @@ void jeroan(){
                                 harga1 = 9200;
                                 harga2 = 9850;
                                 harga3 = 10950;
+                                struk_niaga();
                                 break;
                             case 2:
                                 golongan[4] = "E1-2";
                                 harga1 = 9500;
                                 harga2 = 10150;
                                 harga3 = 11250;
+                                struk_niaga();
                                 break;
                             case 3:
                                 golongan[4] = "E1-3";
                                 harga1 = 9800;
                                 harga2 = 10450;
                                 harga3 = 11550;
+                                struk_niaga();
                                 break;
                             case 4:
                                 golongan[4] = "E1-4";
                                 harga1 = 10100;
                                 harga2 = 10750;
                                 harga3 = 11850;
+                                struk_niaga();
                                 break;
                             default:
                                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
@@ -391,24 +399,28 @@ void jeroan(){
                                 harga1 = 10400;
                                 harga2 = 11050;
                                 harga3 = 12150;
+                                struk_niaga();
                                 break;
                             case 2:
                                 golongan[4] = "E2-2";
                                 harga1 = 10700;
                                 harga2 = 11350;
                                 harga3 = 12550;
+                                struk_niaga();
                                 break;
                             case 3:
                                 golongan[4] = "E2-3";
                                 harga1 = 11000;
                                 harga2 = 11650;
                                 harga3 = 13150;
+                                struk_niaga();
                                 break;
                             case 4:
                                 golongan[4] = "E2-4";
                                 harga1 = 11300;
                                 harga2 = 11950;
                                 harga3 = 13950;
+                                struk_niaga();
                                 break;
                             default:
                                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
@@ -421,24 +433,28 @@ void jeroan(){
                                 harga1 = 11600;
                                 harga2 = 12250;
                                 harga3 = 14750;
+                                struk_niaga();
                                 break;
                             case 2:
                                 golongan[4] = "E3-2";
                                 harga1 = 11900;
                                 harga2 = 12550;
                                 harga3 = 15050;
+                                struk_niaga();
                                 break;
                             case 3:
                                 golongan[4] = "E3-3";
                                 harga1 = 12200;
                                 harga2 = 12850;
                                 harga3 = 15850;
+                                struk_niaga();
                                 break;
                             case 4:
                                 golongan[4] = "E3-4";
                                 harga1 = 12500;
                                 harga2 = 13150;
                                 harga3 = 16650;
+                                struk_niaga();
                                 break;
                             default:
                                 printf("\t\t\t\t Terima kasih karena telah meluangkan waktu Anda.\n\n");
