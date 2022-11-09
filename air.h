@@ -12,7 +12,7 @@
 #define DENDA_100 20 //Denda pemakaian lebih dari 100 meter kubik adalah 20,-
 #define DENDA_10_100 10 //Denda pemakaian lebih dari 10 meter kubik dan tidak lebih dari 100 meter kubik adalah Rp 10,-
 int kelompok, rt, jalan, listrik, harga1, harga2, harga3, baca;
-char nama[100], alamat[100], nama_niaga[100], alamat_niaga[100];
+char nama[100], alamat[100], nama_niaga[100], alamat_niaga[100], golongan[4];
 void identity(){
     printf("\t\t\t\t ====================================\n");
     printf("\t\t\t\t |                                  |\n");
@@ -149,16 +149,18 @@ void jeroan(){
                                 listrik_subsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D1-1";
+                                        golongan[4] = "D1-1";
                                         harga1 = 1780;
                                         harga2 = 2060;
                                         harga3 = 5880;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D1-2";
+                                        golongan[4] = "D1-2";
                                         harga1 = 2060;
                                         harga2 = 2340;
                                         harga3 = 5940;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -166,16 +168,18 @@ void jeroan(){
                                 listrik_subsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D2-1";
+                                        golongan[4] = "D2-1";
                                         harga1 = 2340;
                                         harga2 = 2620;
                                         harga3 = 6000;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D2-2";
+                                        golongan[4] = "D2-2";
                                         harga1 = 2620;
                                         harga2 = 2900;
                                         harga3 = 6060;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -183,16 +187,18 @@ void jeroan(){
                                 listrik_subsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D3-1";
+                                        golongan[4] = "D3-1";
                                         harga1 = 2900;
                                         harga2 = 3180;
                                         harga3 = 6120;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D3-2";
+                                        golongan[4] = "D3-2";
                                         harga1 = 3180;
                                         harga2 = 3460;
                                         harga3 = 6180;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -200,16 +206,18 @@ void jeroan(){
                                 listrik_subsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D4-1";
+                                        golongan[4] = "D4-1";
                                         harga1 = 3460;
                                         harga2 = 3740;
                                         harga3 = 6240;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D4-2";
+                                        golongan[4] = "D4-2";
                                         harga1 = 3740;
                                         harga2 = 4020;
                                         harga3 = 6240;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -224,16 +232,18 @@ void jeroan(){
                                 listrik_nonsubsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D1-3";
+                                        golongan[4] = "D1-3";
                                         harga1 = 6340;
                                         harga2 = 9200;
                                         harga3 = 9600;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D1-4";
+                                        golongan[4] = "D1-4";
                                         harga1 = 6420;
                                         harga2 = 9350;
                                         harga3 = 9650;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -241,16 +251,18 @@ void jeroan(){
                                 listrik_nonsubsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D2-3";
+                                        golongan[4] = "D2-3";
                                         harga1 = 6490;
                                         harga2 = 9500;
                                         harga3 = 9800;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D2-4";
+                                        golongan[4] = "D2-4";
                                         harga1 = 6570;
                                         harga2 = 9650;
                                         harga3 = 9950;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -258,16 +270,18 @@ void jeroan(){
                                 listrik_nonsubsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D3-3";
+                                        golongan[4] = "D3-3";
                                         harga1 = 6640;
                                         harga2 = 9800;
                                         harga3 = 10100;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D3-4";
+                                        golongan[4] = "D3-4";
                                         harga1 = 6720;
                                         harga2 = 9950;
                                         harga3 = 10250;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -275,16 +289,18 @@ void jeroan(){
                                 listrik_nonsubsidi();
                                 switch(listrik){
                                     case 1:
-                                        char golongan[4] = "D4-3";
+                                        golongan[4] = "D4-3";
                                         harga1 = 6790;
                                         harga2 = 10100;
                                         harga3 = 10400;
+                                        struk_rumah_tangga();
                                         break;
                                     case 2:
-                                        char golongan[4] = "D4-4";
+                                        golongan[4] = "D4-4";
                                         harga1 = 6870;
                                         harga2 = 10250;
                                         harga3 = 10550;
+                                        struk_rumah_tangga();
                                         break;
                                 }
                                 break;
@@ -300,25 +316,25 @@ void jeroan(){
                 listrik_campur();
                 switch(listrik){
                     case 1:
-                        char golongan[4] = "D5-1";
+                        golongan[4] = "D5-1";
                         harga1 = 6940;
                         harga2 = 10400;
                         harga3 = 10700;
                         break;
                     case 2:
-                        char golongan[4] = "D5-2";
+                        golongan[4] = "D5-2";
                         harga1 = 7020;
                         harga2 = 10550;
                         harga3 = 10850;
                         break;
                     case 3:
-                        char golongan[4] = "D5-3";
+                        golongan[4] = "D5-3";
                         harga1 = 7090;
                         harga2 = 10700;
                         harga3 = 11000;
                         break;
                     case 4:
-                        char golongan[4] = "D5-4";
+                        golongan[4] = "D5-4";
                         harga1 = 7170;
                         harga2 = 10850;
                         harga3 = 11150;
@@ -341,25 +357,25 @@ void jeroan(){
                         listrik_campur();
                         switch(listrik){
                             case 1:
-                                char golongan[4] = "E1-1";
+                                golongan[4] = "E1-1";
                                 harga1 = 9200;
                                 harga2 = 9850;
                                 harga3 = 10950;
                                 break;
                             case 2:
-                                char golongan[4] = "E1-2";
+                                golongan[4] = "E1-2";
                                 harga1 = 9500;
                                 harga2 = 10150;
                                 harga3 = 11250;
                                 break;
                             case 3:
-                                char golongan[4] = "E1-3";
+                                golongan[4] = "E1-3";
                                 harga1 = 9800;
                                 harga2 = 10450;
                                 harga3 = 11550;
                                 break;
                             case 4:
-                                char golongan[4] = "E1-4";
+                                golongan[4] = "E1-4";
                                 harga1 = 10100;
                                 harga2 = 10750;
                                 harga3 = 11850;
@@ -371,25 +387,25 @@ void jeroan(){
                     case 2:
                         switch(listrik){
                             case 1:
-                                char golongan[4] = "E2-1";
+                                golongan[4] = "E2-1";
                                 harga1 = 10400;
                                 harga2 = 11050;
                                 harga3 = 12150;
                                 break;
                             case 2:
-                                char golongan[4] = "E2-2";
+                                golongan[4] = "E2-2";
                                 harga1 = 10700;
                                 harga2 = 11350;
                                 harga3 = 12550;
                                 break;
                             case 3:
-                                char golongan[4] = "E2-3";
+                                golongan[4] = "E2-3";
                                 harga1 = 11000;
                                 harga2 = 11650;
                                 harga3 = 13150;
                                 break;
                             case 4:
-                                char golongan[4] = "E2-4";
+                                golongan[4] = "E2-4";
                                 harga1 = 11300;
                                 harga2 = 11950;
                                 harga3 = 13950;
@@ -401,25 +417,25 @@ void jeroan(){
                     case 3:
                         switch(listrik){
                             case 1:
-                                char golongan[4] = "E3-1";
+                                golongan[4] = "E3-1";
                                 harga1 = 11600;
                                 harga2 = 12250;
                                 harga3 = 14750;
                                 break;
                             case 2:
-                                char golongan[4] = "E3-2";
+                                golongan[4] = "E3-2";
                                 harga1 = 11900;
                                 harga2 = 12550;
                                 harga3 = 15050;
                                 break;
                             case 3:
-                                char golongan[4] = "E3-3";
+                                golongan[4] = "E3-3";
                                 harga1 = 12200;
                                 harga2 = 12850;
                                 harga3 = 15850;
                                 break;
                             case 4:
-                                char golongan[4] = "E3-4";
+                                golongan[4] = "E3-4";
                                 harga1 = 12500;
                                 harga2 = 13150;
                                 harga3 = 16650;
