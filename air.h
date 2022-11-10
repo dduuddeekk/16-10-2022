@@ -11,7 +11,7 @@
 #define BIAYA_N 10 //Biaya 10+n meter kubik adalah Rp 10,- 
 #define DENDA_100 20 //Denda pemakaian lebih dari 100 meter kubik adalah 20,-
 #define DENDA_10_100 10 //Denda pemakaian lebih dari 10 meter kubik dan tidak lebih dari 100 meter kubik adalah Rp 10,-
-int kelompok, rt, jalan, listrik, harga1, harga2, harga3, baca, bulan_sekarang, bulan_sebelumnya, bulan, totalm, tagihan;
+int kelompok, rt, jalan, listrik, harga1, harga2, harga3, baca, bulan_sekarang, bulan_sebelumnya, bulan, totalm, tagihan, cetak, sisa;
 char nama[100], alamat[100], nama_niaga[100], alamat_niaga[100], golongan[] = "X0-0";
 int validasi_Int(int *var){
     char buff[1024];
@@ -54,6 +54,16 @@ void range_Validasi_Baca(int *var, int range1, int range2, char *nama){
 		printf("\t\t\t\t Pilih nomor yang tersedia: \n");
     }
 }
+void range_Validasi_Baca2(int *var, int range1, int range2, char *nama){
+    while(1){
+        reValidasi_Int(var, nama);
+        fflush(stdin);
+        if(*var == range1  ||*var == range2)
+            break;
+        printf("\n\t\t\t\t Maaf, Input yang Anda masukan salah.\n"); 
+		printf("\t\t\t\t Pilih nomor yang tersedia: \n");
+    }
+}
 void range_Validasi_Bulan(int *var, int range1, char *nama){
     while(1){
         reValidasi_Int(var, nama);
@@ -64,11 +74,328 @@ void range_Validasi_Bulan(int *var, int range1, char *nama){
 		printf("\t\t\t\t Pilih nomor yang tersedia: \n");
     }
 }
+void bukti_rumah_tangga_0(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT);
+    fprintf(pF, "\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_tangga_d(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_tangga_d100(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_tangga_n(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Jatuh Tempo Dalam    : %d hari\n",sisa);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_niaga_0(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+    fprintf(pF, "\t\t\t\t Biaya 10 m^3 pertama : Rp %d,-\n",BIAYA_10);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_niaga_d(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_niaga_d100(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_rumah_niaga_n(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Jatuh Tempo Dalam    : %d hari\n",sisa);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_RT + BPM_U);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_niaga_0(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+    fprintf(pF, "\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+	fprintf(pF, "\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_niaga_d(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+    fprintf(pF, "\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+	fprintf(pF, "\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_10_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_niaga_d100(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+    fprintf(pF, "\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+	fprintf(pF, "\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+    fprintf(pF, "\t\t\t\t Denda                : Rp %d,-\n",DENDA_100);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
+void bukti_niaga_n(){
+    time_t waktu;
+    waktu = time(NULL);
+    struct tm tm = *localtime(&waktu);
+    FILE *pF = fopen("bukti.txt","w");
+    if(pF == NULL){
+        printf("\n\t\t\t\t Maaf, tidak dapat mencetak bukti pembayaran.\n");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(pF, "\t\t\t\t===============================================\n");
+	fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t Nama Pemilik         : %s\n",nama);
+	fprintf(pF, "\t\t\t\t Alamat               : %s\n",alamat);
+    fprintf(pF, "\t\t\t\t Nama Niaga           : %s\n",nama_niaga);
+	fprintf(pF, "\t\t\t\t Alamat Niaga         : %s\n",alamat_niaga);
+	fprintf(pF, "\t\t\t\t Golongan Anda        : %s\n",golongan);
+    fprintf(pF, "\t\t\t\t Tanggal              : %d-%d-%d\n",tm.tm_mday, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Tanggal Jatuh Tempo  : %d-%d-%d\n",JATUH_TEMPO, tm.tm_mon, tm.tm_year);
+    fprintf(pF, "\t\t\t\t Jatuh Tempo Dalam    : %d hari\n",sisa);
+	fprintf(pF, "\t\t\t\t Biaya Administrasi   : Rp %d,-\n",ADM);
+	fprintf(pF, "\t\t\t\t Biaya Pemeliharaan   : Rp %d,-\n",BPM_U);
+	fprintf(pF, "\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
+    fprintf(pF, "\t\t\t\t                                               \n");
+	fprintf(pF, "\t\t\t\t===============================================\n");
+    fclose(pF);
+
+    printf("\t\t\t\t Bukti pembayaran berhasil dicetak.\n");
+}
 void struk_rumah_tangga(){
     time_t waktu;
     waktu = time(NULL);
     struct tm tm = *localtime(&waktu);
-    int sisa = JATUH_TEMPO - tm.tm_mday;
+    sisa = JATUH_TEMPO - tm.tm_mday;
     range_Validasi_Bulan(&bulan_sekarang, 0, "\t\t\t\t Masukkan pemakaian bulan sekarang (M^3): ");
     range_Validasi_Bulan(&bulan_sebelumnya, 0, "\t\t\t\t Masukkan pemakaian bulan sebelumnya (M^3): ");
     system("cls");
@@ -92,6 +419,12 @@ void struk_rumah_tangga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_rumah_tangga_0();
+            }
         }else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
             totalm = bulan_sekarang*harga2;
             tagihan = BPM_RT + ADM + totalm + BIAYA_10;
@@ -107,6 +440,12 @@ void struk_rumah_tangga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_rumah_tangga_0();
+            }
         }else{
             totalm = bulan_sekarang*harga3;
             tagihan = BPM_RT + ADM + totalm + BIAYA_10;
@@ -122,6 +461,12 @@ void struk_rumah_tangga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_rumah_tangga_0();
+            }
         }
     }else{
         if(sisa < 0){
@@ -142,6 +487,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_d();
+                }
             }else if(bulan >= 11 && bulan <= 20){
                 totalm = bulan*harga2;
                 tagihan = BPM_RT + ADM + totalm + DENDA_10_100;
@@ -158,6 +509,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_d();
+                }
             }else if(bulan > 20 && bulan < 100){
                 totalm = bulan*harga3;
                 tagihan = BPM_RT + ADM + totalm + DENDA_10_100;
@@ -174,6 +531,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_d();
+                }
             }else{
                 totalm = bulan*harga3;
                 tagihan = BPM_RT + ADM + totalm + DENDA_100;
@@ -190,6 +553,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_d100();
+                }
             }
         }else{
             bulan = bulan_sekarang - bulan_sebelumnya;
@@ -209,6 +578,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_n();
+                }
             }else if(bulan >= 11 && bulan <= 20){
                 totalm = bulan*harga2;
                 tagihan = BPM_RT + ADM + totalm;
@@ -225,6 +600,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_n();
+                }
             }else{
                 totalm = bulan*harga3;
                 tagihan = BPM_RT + ADM + totalm;
@@ -241,6 +622,12 @@ void struk_rumah_tangga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_tangga_n();
+                }
             }
         }
     }
@@ -249,7 +636,7 @@ void struk_rumah_niaga(){
     time_t waktu;
     waktu = time(NULL);
     struct tm tm = *localtime(&waktu);
-    int sisa = JATUH_TEMPO - tm.tm_mday;
+    sisa = JATUH_TEMPO - tm.tm_mday;
     range_Validasi_Bulan(&bulan_sekarang, 0, "\t\t\t\t Masukkan pemakaian bulan sekarang (M^3): ");
     range_Validasi_Bulan(&bulan_sebelumnya, 0, "\t\t\t\t Masukkan pemakaian bulan sebelumnya (M^3): ");
     system("cls");
@@ -273,6 +660,12 @@ void struk_rumah_niaga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_rumah_niaga_0();
+            }
         }else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
             totalm = bulan_sekarang*harga2;
             tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
@@ -288,6 +681,12 @@ void struk_rumah_niaga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_rumah_niaga_0();
+            }
         }else{
             totalm = bulan_sekarang*harga3;
             tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
@@ -303,6 +702,12 @@ void struk_rumah_niaga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_rumah_niaga_0();
+            }
         }
     }else{
         if(sisa < 0){
@@ -323,6 +728,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_d();
+                }
             }else if(bulan >= 11 && bulan <= 20){
                 totalm = bulan*harga2;
                 tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_10_100;
@@ -339,6 +750,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_d();
+                }
             }else if(bulan > 20 && bulan < 100){
                 totalm = bulan*harga3;
                 tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_10_100;
@@ -355,6 +772,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_d();
+                }
             }else{
                 totalm = bulan*harga3;
                 tagihan = BPM_RT + BPM_U + ADM + totalm + DENDA_100;
@@ -371,6 +794,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_d100();
+                }
             }
         }else{
             bulan = bulan_sekarang - bulan_sebelumnya;
@@ -390,6 +819,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_n();
+                }
             }else if(bulan >= 11 && bulan <= 20){
                 totalm = bulan*harga2;
                 tagihan = BPM_RT + BPM_U + ADM + totalm;
@@ -406,6 +841,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_n();
+                }
             }else{
                 totalm = bulan*harga3;
                 tagihan = BPM_RT + BPM_U + ADM + totalm;
@@ -422,6 +863,12 @@ void struk_rumah_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_rumah_niaga_n();
+                }
             }
         }
     }
@@ -430,7 +877,7 @@ void struk_niaga(){
     time_t waktu;
     waktu = time(NULL);
     struct tm tm = *localtime(&waktu);
-    int sisa = JATUH_TEMPO - tm.tm_mday;
+    sisa = JATUH_TEMPO - tm.tm_mday;
     range_Validasi_Bulan(&bulan_sekarang, 0, "\t\t\t\t Masukkan pemakaian bulan sekarang (M^3): ");
     range_Validasi_Bulan(&bulan_sebelumnya, 0, "\t\t\t\t Masukkan pemakaian bulan sebelumnya (M^3): ");
     system("cls");
@@ -456,6 +903,12 @@ void struk_niaga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_niaga_0();
+            }
         }else if(bulan_sekarang >= 11 && bulan_sekarang <= 20){
             totalm = bulan_sekarang*harga2;
             tagihan = BPM_U + ADM + totalm + BIAYA_10;
@@ -473,6 +926,12 @@ void struk_niaga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_niaga_0();
+            }
         }else{
             totalm = bulan_sekarang*harga3;
             tagihan = BPM_RT + BPM_U + ADM + totalm + BIAYA_10;
@@ -490,6 +949,12 @@ void struk_niaga(){
 			printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
 			printf("\t\t\t\t                                               \n");
 			printf("\t\t\t\t===============================================\n");
+            printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+            printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+            range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+            if(cetak == 9){
+                bukti_niaga_0();
+            }
         }
     }else{
         if(sisa < 0){
@@ -512,6 +977,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_d();
+                }
             }else if(bulan >= 11 && bulan <= 20){
                 totalm = bulan*harga2;
                 tagihan = BPM_U + ADM + totalm + DENDA_10_100;
@@ -530,6 +1001,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_d();
+                }
             }else if(bulan > 20 && bulan < 100){
                 totalm = bulan*harga3;
                 tagihan = BPM_U + ADM + totalm + DENDA_10_100;
@@ -548,6 +1025,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_d();
+                }
             }else{
                 totalm = bulan*harga3;
                 tagihan = BPM_U + ADM + totalm + DENDA_100;
@@ -566,6 +1049,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_d100();
+                }
             }
         }else{
             bulan = bulan_sekarang - bulan_sebelumnya;
@@ -587,6 +1076,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_n();
+                }
             }else if(bulan >= 11 && bulan <= 20){
                 totalm = bulan*harga2;
                 tagihan = BPM_U + ADM + totalm;
@@ -605,6 +1100,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_n();
+                }
             }else{
                 totalm = bulan*harga3;
                 tagihan = BPM_U + ADM + totalm;
@@ -623,6 +1124,12 @@ void struk_niaga(){
                 printf("\t\t\t\t Total Tagihan        : Rp %d,00\n",tagihan);
                 printf("\t\t\t\t                                               \n");
                 printf("\t\t\t\t===============================================\n");
+                printf("\n\t\t\t\t Apakah Anda ingin mencetak bukti pembayaran?\n");
+                printf("\t\t\t\t (0 jika tidak, 9 jika iya)\n");
+                range_Validasi_Baca2(&cetak, 0, 9, "\t\t\t\t >>");
+                if(cetak == 9){
+                    bukti_niaga_n();
+                }
             }
         }
     }
